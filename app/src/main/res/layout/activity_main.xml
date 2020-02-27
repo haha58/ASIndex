@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey_100"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_top_layout"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fm_content_one"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            />
+
+        <FrameLayout
+            android:id="@+id/fm_content_two"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            />
+
+        <FrameLayout
+            android:id="@+id/fm_content_three"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            />
+
+        <FrameLayout
+            android:id="@+id/fm_content_four"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            />
+
+        <include
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/include_bottom_layout"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
